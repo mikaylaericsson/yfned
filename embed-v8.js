@@ -219,6 +219,7 @@
             });
             scene_006.style.display = 'none';
             currentScene = 'scene_012';
+            scene_012.style.display = 'flex';
     };
 
     //--------------------------------------------------> scene_010 Menu
