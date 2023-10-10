@@ -1,3 +1,4 @@
+    //version 8.1
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
     var currentScene;
@@ -84,7 +85,7 @@
         } else if (timeRounded == 110 && currentScene == 'scene_007') {
             player.pause();
             scene_006.style.display = 'flex';
-        } else if (timeRounded == 125 && currentScene == 'scene_008') {
+        } else if (timeRounded == 126 && currentScene == 'scene_008') {
             player.pause();
             scene_006.style.display = 'flex';
         } else if (timeRounded == 131 && currentScene == 'scene_009') {
