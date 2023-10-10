@@ -81,7 +81,7 @@
         } else if (timeRounded == 95 && currentScene == 'scene_006') {
             player.pause();
             scene_006.style.display = 'flex';
-        } else if (timeRounded == 109 && currentScene == 'scene_007') {
+        } else if (timeRounded == 110 && currentScene == 'scene_007') {
             player.pause();
             scene_006.style.display = 'flex';
         } else if (timeRounded == 125 && currentScene == 'scene_008') {
