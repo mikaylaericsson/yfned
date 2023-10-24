@@ -1,4 +1,5 @@
-    //version 9.2
+
+    console.log("version 9.3");
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
     var currentScene;
