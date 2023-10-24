@@ -56,7 +56,7 @@
         player.play();
         scene_start.style.display = 'none';
         currentScene = 'scene_000';
-        console.log("version 9.4");
+        console.log("version 9.5");
     };
     
     //get time - code for pauses
@@ -161,7 +161,7 @@
 
     //--------------------------------------------------> scene_003 Menu
     //scene_003 Yes Button -> scene_005
-    scene_003_BtnYes.onclick = function () {
+    /*scene_003_BtnYes.onclick = function () {
             player.setCurrentTime(60).then(function() {
                 return player.play(); 
             });
@@ -174,7 +174,7 @@
             scene_004.style.display = 'flex';
     };
 
-
+*/
     //--------------------------------------------------> scene_004 Menu
     //scene_004 A Button -> scene_006
 
