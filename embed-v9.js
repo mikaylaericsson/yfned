@@ -56,7 +56,7 @@
         player.play();
         scene_start.style.display = 'none';
         currentScene = 'scene_000';
-        console.log("version 9.3");
+        console.log("version 9.4");
     };
     
     //get time - code for pauses
@@ -237,6 +237,7 @@
     scene_010_BtnGo.onclick = function () {
             scene_010.style.display = 'none';
             scene_004.style.display = 'flex';
+            console.log("PRESSED")
     };
 
     //--------------------------------------------------> scene_011 Menu
