@@ -1,4 +1,4 @@
-    //version 8.2
+    //version 9.0
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
     var currentScene;
@@ -11,7 +11,7 @@
     //scene_001
     const scene_001 = document.getElementById("scene_001");
     const scene_001_BtnYes = document.getElementById("scene_001_BtnYes");
-    const scene_001_BtnNo = document.getElementById("scene_002_BtnNo");
+    const scene_001_BtnNo = document.getElementById("scene_001_BtnNo");
     //scene_002
     const scene_002 = document.getElementById("scene_002");
     const scene_002_BtnYes = document.getElementById("scene_002_BtnYes");
