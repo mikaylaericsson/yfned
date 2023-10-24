@@ -1,5 +1,6 @@
 
-    console.log("version 9.3");
+    
+
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
     var currentScene;
@@ -55,6 +56,7 @@
         player.play();
         scene_start.style.display = 'none';
         currentScene = 'scene_000';
+        console.log("version 9.3");
     };
     
     //get time - code for pauses
