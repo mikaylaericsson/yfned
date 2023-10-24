@@ -1,4 +1,4 @@
-    //version 9.1
+    //version 9.2
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
     var currentScene;
@@ -230,13 +230,10 @@
     };
 
     //--------------------------------------------------> scene_010 Menu
-    //scene_010 Next Button -> scene_001
+    //scene_010 Next Button -> No Scene Change, just menu swap
     scene_010_BtnGo.onclick = function () {
-            player.setCurrentTime(18).then(function() {
-                return player.play(); 
-            });
             scene_010.style.display = 'none';
-            currentScene = 'scene_001';
+            scene_004.style.display = 'flex';
     };
 
     //--------------------------------------------------> scene_011 Menu
