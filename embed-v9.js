@@ -237,9 +237,6 @@
     };
     //scene_004 Back Button -> load scene 001 menu 
     scene_004_BtnBack.onclick = function () {
-            player.setCurrentTime(0).then(function() {
-                return player.play(); 
-            });
             scene_004.style.display = 'none';
             scene_001.style.display = 'flex';
             
