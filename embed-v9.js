@@ -14,32 +14,40 @@
     const scene_001 = document.getElementById("scene_001");
     const scene_001_BtnYes = document.getElementById("scene_001_BtnYes");
     const scene_001_BtnNo = document.getElementById("scene_001_BtnNo");
+    const scene_001_BtnBack = document.getElementById("scene_001_BtnBack");
     //scene_002
     const scene_002 = document.getElementById("scene_002");
     const scene_002_BtnYes = document.getElementById("scene_002_BtnYes");
     const scene_002_BtnNo = document.getElementById("scene_002_BtnNo");
+    const scene_002_BtnBack = document.getElementById("scene_002_BtnBack");
     //scene_003
     const scene_003 = document.getElementById("scene_003");
     const scene_003_BtnYes = document.getElementById("scene_003_BtnYes");
     const scene_003_BtnNo = document.getElementById("scene_003_BtnNo");
+    const scene_003_BtnBack = document.getElementById("scene_003_BtnBack");
     //scene_004
     const scene_004 = document.getElementById("scene_004");
     const scene_004_BtnA = document.getElementById("scene_004_BtnA");
     const scene_004_BtnB = document.getElementById("scene_004_BtnB");
     const scene_004_BtnC = document.getElementById("scene_004_BtnC");
     const scene_004_BtnNo = document.getElementById("scene_004_BtnNo");
+    const scene_004_BtnBack = document.getElementById("scene_004_BtnBack");
     //scene_005
     const scene_005 = document.getElementById("scene_005");
     const scene_005_BtnGo = document.getElementById("scene_005_BtnGo");
+    const scene_005_BtnBack = document.getElementById("scene_005_BtnBack");
     //scene_006
     const scene_006 = document.getElementById("scene_006");
     const scene_006_BtnGo = document.getElementById("scene_006_BtnGo");
+    const scene_006_BtnBack = document.getElementById("scene_006_BtnBack");
     //scene_010
     const scene_010 = document.getElementById("scene_010");
     const scene_010_BtnGo = document.getElementById("scene_010_BtnGo");
+    const scene_010_BtnBack = document.getElementById("scene_010_BtnBack");
     //scene_011
     const scene_011 = document.getElementById("scene_011");
     const scene_011_BtnGo = document.getElementById("scene_011_BtnGo");
+    const scene_011_BtnBack = document.getElementById("scene_011_BtnBack");
     //scene_012
     const scene_012 = document.getElementById("scene_012");
     const play_again_button = document.getElementById("play_again_button");
@@ -56,7 +64,7 @@
         player.play();
         scene_start.style.display = 'none';
         currentScene = 'scene_000';
-        console.log("version 9.5");
+        console.log("version 9.6");
     };
     
     //get time - code for pauses
@@ -138,6 +146,14 @@
     scene_001_BtnNo.onclick = function () {
             scene_001.style.display = 'none';
             scene_004.style.display = 'flex';
+    };
+    //scene_001 Back Button -> scene_000
+    scene_001_BtnBack.onclick = function () {
+            player.setCurrentTime(17).then(function() {
+                return player.play(); 
+            });
+            scene_001.style.display = 'none';
+            
     };
 
     //--------------------------------------------------> scene_002 Menu
