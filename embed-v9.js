@@ -154,7 +154,6 @@
             });
             currentScene = 'scene_000';
             scene_001.style.display = 'none';
-            
     };
 
     //--------------------------------------------------> scene_002 Menu
