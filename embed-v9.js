@@ -149,10 +149,11 @@
     };
     //scene_001 Back Button -> scene_000
     scene_001_BtnBack.onclick = function () {
-            player.setCurrentTime(17).then(function() {
+            player.setCurrentTime(0).then(function() {
                 return player.play(); 
             });
             scene_001.style.display = 'none';
+            currentScene = 'scene_000';
             
     };
 
