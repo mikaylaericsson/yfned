@@ -280,6 +280,15 @@
             scene_004.style.display = 'flex';
             console.log("PRESSED")
     };
+    //scene_010 Back Button -> scene_002
+    scene_010_BtnBack.onclick = function () {
+            player.setCurrentTime(25).then(function() {
+                return player.play(); 
+            });
+            scene_010.style.display = 'none';
+            currentScene = 'scene_002';
+            
+    };
 
     //--------------------------------------------------> scene_011 Menu
     //scene_011 Next Button -> scene_012
@@ -291,6 +300,16 @@
             currentScene = 'scene_012';
             scene_012.style.display = 'flex';
     };
+    //scene_011 Back Button -> scene_002
+    scene_011_BtnBack.onclick = function () {
+            player.setCurrentTime(25).then(function() {
+                return player.play(); 
+            });
+            scene_011.style.display = 'none';
+            currentScene = 'scene_002';
+            
+    };
+
     //--------------------------------------------------> scene_011 Menu
     //scene_012 Next Button -> scene_000
     play_again_button.onclick = function () {
