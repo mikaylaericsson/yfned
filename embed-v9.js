@@ -175,7 +175,7 @@
             currentScene = 'scene_011';
     };
     //scene_002 Back Button -> scene_000
-    scene_001_BtnBack.onclick = function () {
+    scene_002_BtnBack.onclick = function () {
             player.setCurrentTime(0).then(function() {
                 return player.play(); 
             });
