@@ -78,37 +78,37 @@
         //pause video at 17 seconds
         if (timeRounded == 17 && currentScene == 'scene_000') {
             player.pause();
-            scene_000.style.display = 'flex';
+            scene_000.style.display = 'block';
         } else if (timeRounded == 25 && currentScene == 'scene_001') {
             player.pause();
-            scene_001.style.display = 'flex';
+            scene_001.style.display = 'block';
         } else if (timeRounded == 48 && currentScene == 'scene_002') {
             player.pause();
-            scene_002.style.display = 'flex';
+            scene_002.style.display = 'block';
         } else if (timeRounded == 54 && currentScene == 'scene_003') {
             player.pause();
-            scene_003.style.display = 'flex';
+            scene_003.style.display = 'block';
         } else if (timeRounded == 80 && currentScene == 'scene_005') {
             player.pause();
-            scene_005.style.display = 'flex';
+            scene_005.style.display = 'block';
         } else if (timeRounded == 95 && currentScene == 'scene_006') {
             player.pause();
-            scene_006.style.display = 'flex';
+            scene_006.style.display = 'block';
         } else if (timeRounded == 110 && currentScene == 'scene_007') {
             player.pause();
-            scene_006.style.display = 'flex';
+            scene_006.style.display = 'block';
         } else if (timeRounded == 126 && currentScene == 'scene_008') {
             player.pause();
-            scene_006.style.display = 'flex';
+            scene_006.style.display = 'block';
         } else if (timeRounded == 132 && currentScene == 'scene_009') {
             player.pause();
-            scene_006.style.display = 'flex';
+            scene_006.style.display = 'block';
         } else if (timeRounded == 142 && currentScene == 'scene_010') {
             player.pause();
-            scene_010.style.display = 'flex';
+            scene_010.style.display = 'block';
         } else if (timeRounded == 152 && currentScene == 'scene_011') {
             player.pause();
-            scene_011.style.display = 'flex';
+            scene_011.style.display = 'block';
         } else if (timeRounded == 166 && currentScene == 'scene_012') {
             player.pause();
         }
@@ -145,7 +145,7 @@
     //scene_001 No Button -> No next scene, just menu change
     scene_001_BtnNo.onclick = function () {
             scene_001.style.display = 'none';
-            scene_004.style.display = 'flex';
+            scene_004.style.display = 'block';
     };
     //scene_001 Back Button -> scene_000
     scene_001_BtnBack.onclick = function () {
@@ -196,7 +196,7 @@
     //scene_003 No Button -> scene_005
     scene_003_BtnNo.onclick = function () {
             scene_003.style.display = 'none';
-            scene_004.style.display = 'flex';
+            scene_004.style.display = 'block';
     };
 
 */
@@ -237,7 +237,7 @@
     //scene_004 Back Button -> load scene 001 menu 
     scene_004_BtnBack.onclick = function () {
             scene_004.style.display = 'none';
-            scene_001.style.display = 'flex';
+            scene_001.style.display = 'block';
             
     };
 
@@ -270,14 +270,14 @@
             });
             scene_006.style.display = 'none';
             currentScene = 'scene_012';
-            scene_012.style.display = 'flex';
+            scene_012.style.display = 'block';
     };
 
     //--------------------------------------------------> scene_010 Menu
     //scene_010 Next Button -> No Scene Change, just menu swap
     scene_010_BtnGo.onclick = function () {
             scene_010.style.display = 'none';
-            scene_004.style.display = 'flex';
+            scene_004.style.display = 'block';
             console.log("PRESSED")
     };
     //scene_010 Back Button -> scene_002
@@ -298,7 +298,7 @@
             });
             scene_011.style.display = 'none';
             currentScene = 'scene_012';
-            scene_012.style.display = 'flex';
+            scene_012.style.display = 'block';
     };
     //scene_011 Back Button -> scene_002
     scene_011_BtnBack.onclick = function () {
