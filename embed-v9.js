@@ -136,7 +136,7 @@
     //--------------------------------------------------> scene_001 Menu
     //scene_001 Yes Button -> scene_005
     scene_001_BtnYes.onclick = function () {
-            player.setCurrentTime(55).then(function() {
+            player.setCurrentTime(54).then(function() {
                 return player.play(); 
             });
             scene_001.style.display = 'none';
