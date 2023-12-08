@@ -273,9 +273,6 @@
             scene_012.style.display = 'block';
     };
     scene_006_BtnBack.onclick = function () {
-            player.setCurrentTime(18).then(function() {
-                return player.play(); 
-            });
             scene_006.style.display = 'none';
             scene_004.style.display = 'block'; 
     };
