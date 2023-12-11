@@ -36,6 +36,7 @@
     const scene_005 = document.getElementById("scene_005");
     const scene_005_BtnGo = document.getElementById("scene_005_BtnGo");
     const scene_005_BtnBack = document.getElementById("scene_005_BtnBack");
+    const scene_005_BtnNo = document.getElementById("scene_005_BtnNo");
     //scene_006
     const scene_006 = document.getElementById("scene_006");
     const scene_006_BtnGo = document.getElementById("scene_006_BtnGo");
@@ -253,6 +254,15 @@
     };
     //scene_005 Back Button -> scene_001
     scene_005_BtnBack.onclick = function () {
+            player.setCurrentTime(18).then(function() {
+                return player.play(); 
+            });
+            scene_005.style.display = 'none';
+            currentScene = 'scene_001';
+            
+    };
+    //scene_005 No Button -> scene_001
+    scene_005_BtnNo.onclick = function () {
             player.setCurrentTime(18).then(function() {
                 return player.play(); 
             });
