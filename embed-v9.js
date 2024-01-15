@@ -325,13 +325,13 @@
     };
 
     //--------------------------------------------------> scene_011 Menu
-    //scene_012 Next Button -> scene_000
+    //scene_012 Next Button -> scene_001
     play_again_button.onclick = function () {
-            player.setCurrentTime(0).then(function() {
+            player.setCurrentTime(1).then(function() {
                 return player.play(); 
             });
             scene_012.style.display = 'none';
-            currentScene = 'scene_000';
+            currentScene = 'scene_001';
     };
 
 
